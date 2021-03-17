@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FlyForward.Core.API</name>
+    </assembly>
+    <members>
+        <member name="T:FlyForward.Core.API.Controllers.AbstractController">
+            <summary>
+            控制器抽象
+            </summary>
+        </member>
+        <member name="T:FlyForward.Core.API.Controllers.TokenController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:FlyForward.Core.API.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FlyForward.Core.API.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="T:FlyForward.Core.API.Startup">
+             <summary>
+            继承基础的
+             </summary>
+        </member>
+    </members>
+</doc>

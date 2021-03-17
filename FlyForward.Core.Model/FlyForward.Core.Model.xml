@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FlyForward.Core.Model</name>
+    </assembly>
+    <members>
+        <member name="T:FlyForward.Core.Model.Models.bi_user">
+            <summary>
+            bi_user
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.bi_user.user_id">
+            <summary>
+            user_id
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.bi_user.user_pwd">
+            <summary>
+            user_pwd
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.bi_user.user_no">
+            <summary>
+            user_no
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.bi_user.user_name">
+            <summary>
+            user_name
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.bi_user.user_tel">
+            <summary>
+            user_tel
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.bi_user.user_mobile">
+            <summary>
+            user_mobile
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.bi_user.user_wechat">
+            <summary>
+            user_wechat
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.bi_user.user_cardid">
+            <summary>
+            user_cardid
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.bi_user.user_sex">
+            <summary>
+            user_sex
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.bi_user.user_weight">
+            <summary>
+            user_weight
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.bi_user.user_height">
+            <summary>
+            user_height
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.bi_user.user_age">
+            <summary>
+            user_age
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.bi_user.birth_date">
+            <summary>
+            birth_date
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.bi_user.user_remarks">
+            <summary>
+            user_remarks
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.bi_user.user_status">
+            <summary>
+            user_status
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.bi_user.user_type">
+            <summary>
+            user_type
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.bi_user.activity_level">
+            <summary>
+            activity_level
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.bi_user.stored_amt">
+            <summary>
+            stored_amt
+            </summary>
+        </member>
+        <member name="T:FlyForward.Core.Model.Models.op_flow">
+            <summary>
+            op_flow
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.op_flow.flow_no">
+            <summary>
+            flow_no
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.op_flow.user_id">
+            <summary>
+            user_id
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.op_flow.oper_type">
+            <summary>
+            oper_type
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.op_flow.oper_date">
+            <summary>
+            oper_date
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.op_flow.oper_amt">
+            <summary>
+            oper_amt
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.op_flow.oper_txt">
+            <summary>
+            oper_txt
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.op_flow.pay_way">
+            <summary>
+            pay_way
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.op_flow.sheet_no">
+            <summary>
+            sheet_no
+            </summary>
+        </member>
+        <member name="P:FlyForward.Core.Model.Models.op_flow.refsheet_no">
+            <summary>
+            refsheet_no
+            </summary>
+        </member>
+    </members>
+</doc>

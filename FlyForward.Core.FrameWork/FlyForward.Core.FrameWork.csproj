@@ -1,0 +1,62 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <None Update="FlyForward.Core.FrameWork.Entity\FlyForward.Core.FrameWork.Entity.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+    </None>
+    <None Update="FlyForward.Core.FrameWork.IRepository\FlyForward.Core.FrameWork.IRepository.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>FlyForward.Core.FrameWork.IRepository.cs</LastGenOutput>
+    </None>
+    <None Update="FlyForward.Core.FrameWork.IServices\FlyForward.Core.FrameWork.IServices.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>FlyForward.Core.FrameWork.IServices.cs</LastGenOutput>
+    </None>
+    <None Update="FlyForward.Core.FrameWork.Repository\FlyForward.Core.FrameWork.Repository.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>FlyForward.Core.FrameWork.Repository.cs</LastGenOutput>
+    </None>
+    <None Update="FlyForward.Core.FrameWork.Services\FlyForward.Core.FrameWork.Services.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>FlyForward.Core.FrameWork.Services.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Compile Update="FlyForward.Core.FrameWork.IRepository\FlyForward.Core.FrameWork.IRepository.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FlyForward.Core.FrameWork.IRepository.tt</DependentUpon>
+    </Compile>
+    <Compile Update="FlyForward.Core.FrameWork.IServices\FlyForward.Core.FrameWork.IServices.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FlyForward.Core.FrameWork.IServices.tt</DependentUpon>
+    </Compile>
+    <Compile Update="FlyForward.Core.FrameWork.Repository\FlyForward.Core.FrameWork.Repository.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FlyForward.Core.FrameWork.Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Update="FlyForward.Core.FrameWork.Services\FlyForward.Core.FrameWork.Services.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FlyForward.Core.FrameWork.Services.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+
+
+
+</Project>

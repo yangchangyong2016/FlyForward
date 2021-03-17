@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\Asp .Net Core 代码\FlyForward.Core\FlyForward.Core.API\bin\Debug\net5.0\FlyForward.Core.Services.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FlyForward.Core.Model\FlyForward.Core.Model.csproj" />
+    <ProjectReference Include="..\FlyForward.Core.Repository\FlyForward.Core.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
