@@ -18,6 +18,7 @@
     <ProjectReference Include="..\FlyForward.Core.Model\FlyForward.Core.Model.csproj" />
     <ProjectReference Include="..\FlyForward.Core.Repository\FlyForward.Core.Repository.csproj" />
     <ProjectReference Include="..\FlyForward.Core.Services\FlyForward.Core.Services.csproj" />
+    <ProjectReference Include="..\NetCore.Common.Utils\NetCore.Common.Utils.csproj" />
     <ProjectReference Include="..\NetCore.Web.HttpContext\NetCore.Web.HttpContext.csproj" />
   </ItemGroup>
 

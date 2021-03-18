@@ -3,7 +3,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using NetCore.Common.Utils;
+using NetCore.Framework.Extensions.Serilog;
 using NetCore.WebHost.HostAppSetting;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -45,14 +47,14 @@ namespace NetCore.WebHost
 				hostOptions.Urls = "http://*:5000";
 
 			return Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(args)
-                    .UseServiceProviderFactory(new AutofacServiceProviderFactory())
                     .UseDefaultServiceProvider(options => { options.ValidateOnBuild = false; })
                     .ConfigureWebHostDefaults(webBuilder =>
                     {
-                        webBuilder//.UseLogging()
+                        webBuilder.UseLogging()
+                            .UseSerilog()
                             .UseStartup<TStartup>()
                             .UseUrls(hostOptions.Urls);
-                    }); 
+                    }).UseServiceProviderFactory(new AutofacServiceProviderFactory()); 
         }
     }
 }

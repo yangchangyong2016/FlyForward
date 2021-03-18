@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Hosting;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
 using Serilog;
 using System;
 using System.Collections.Generic;
@@ -36,6 +37,26 @@ namespace NetCore.Framework.Extensions.Serilog
                             outputTemplate: "[{Timestamp:HH:mm:ss} {Level:u3}] {Message:lj} {Properties:j}{NewLine}{Exception}")
                           .WriteTo.File(Path.Combine("logs", "log.txt"), rollingInterval: RollingInterval.Day, rollOnFileSizeLimit: true);
                 }
+            });
+
+            return builder;
+        }
+
+        public static IHostBuilder UseLogging(this IHostBuilder builder)
+        {
+            builder.UseSerilog((hostingContext, loggerConfiguration) =>
+            {
+                loggerConfiguration.ReadFrom.Configuration(hostingContext.Configuration).Enrich.FromLogContext();
+            });
+
+            return builder;
+        }
+
+        public static IWebHostBuilder UseLogging(this IWebHostBuilder builder)
+        {
+            builder.UseSerilog((hostingContext, loggerConfiguration) =>
+            {
+                loggerConfiguration.ReadFrom.Configuration(hostingContext.Configuration).Enrich.FromLogContext();
             });
 
             return builder;

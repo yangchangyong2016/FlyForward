@@ -1,11 +1,5 @@
 ﻿using Autofac;
 using Autofac.Extras.DynamicProxy;
-//using Blog.Core.AOP;
-//using Blog.Core.Common;
-//using Blog.Core.IRepository.Base;
-//using Blog.Core.Model;
-//using Blog.Core.Repository.Base;
-//using log4net;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -25,8 +19,8 @@ namespace NetCore.Framework.Extensions.Autofac
 
             #region 带有接口层的服务注入
 
-            var servicesDllFile = Path.Combine(basePath, "Blog.Core.Services.dll");
-            var repositoryDllFile = Path.Combine(basePath, "Blog.Core.Repository.dll");
+            var servicesDllFile = Path.Combine(basePath, "FlyForward.Core.Services.dll");
+            var repositoryDllFile = Path.Combine(basePath, "FlyForward.Core.Repository.dll");
 
             if (!(File.Exists(servicesDllFile) && File.Exists(repositoryDllFile)))
             {

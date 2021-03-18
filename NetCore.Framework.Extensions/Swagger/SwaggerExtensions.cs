@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
+using NetCore.Common.Utils;
 using Serilog;
 using Swashbuckle.AspNetCore.Filters;
 using System;
@@ -23,9 +24,8 @@ namespace NetCore.Framework.Extensions.Swagger
             if (services == null) throw new ArgumentNullException(nameof(services));
 
             var basePath = AppContext.BaseDirectory;
-            //var basePath2 = Microsoft.DotNet.PlatformAbstractions.ApplicationEnvironment.ApplicationBasePath;
-           // var ApiName = Appsettings.app(new string[] { "Startup", "ApiName" });
-            var ApiName ="yangchangyong";
+            var basePath2 = Microsoft.DotNet.PlatformAbstractions.ApplicationEnvironment.ApplicationBasePath;
+            var ApiName = Appsettings.app(new string[] { "Startup", "ApiName" });
             services.AddSwaggerGen(c =>
             {
                 //遍历出全部的版本，做文档信息展示

@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using NetCore.Common.Utils;
 using NetCore.Framework.Extensions.Swagger;
 using NetCore.WebHost.HostAppSetting;
 
@@ -21,6 +22,7 @@ namespace NetCore.WebHost
         /// <returns></returns>
         public static IServiceCollection AddWebHost(this IServiceCollection services, HostOptionsSetting hostOptions, IHostEnvironment env, IConfiguration cfg)
         {
+            services.AddSingleton(new Appsettings(cfg));
             services.AddControllers();
             services.AddHttpContextAccessor();
             services.AddSingleton(hostOptions);

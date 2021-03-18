@@ -75,7 +75,7 @@ namespace NetCore.WebHost
                 app.UseSwagger();
                 app.UseSwaggerUI(c =>
                 {
-                    c.SwaggerEndpoint($"/swagger/V1/swagger.json", $"{"昌"} V1");
+                    c.SwaggerEndpoint($"/swagger/V1/swagger.json", $"{"Group"} V1");
                     //c.IndexStream = "";
                     //路径配置，设置为空，表示直接在根域名（localhost:8001）访问该文件,注意localhost:8001/swagger是访问不到的，
                     //去launchSettings.json把launchUrl去掉，如果你想换一个路径，直接写名字即可，比如直接写c.RoutePrefix = "doc";
